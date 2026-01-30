@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Main container */
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f8; /* soft light gray */
+}
+
+/* Box containing left and right */
+.box {
+    height: 85%;
+    width: 80%;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+
+/* Left container - Student list */
+.left-container {
+    width: 30%;
+    background-color: #2d3748; /* dark slate gray */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Student list wrapper */
+.std-list {
+    width: 90%;
+    height: 90%;
+    background-color: #edf2f7; /* very light gray */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 12px;
+    overflow-y: auto;
+}
+
+/* Individual student */
+.stds {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    color: #2d3748;
+    text-align: left;
+    padding-left: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.stds:hover {
+    background-color: #e2e8f0; /* light hover gray */
+    transform: translateX(5px);
+}
+
+/* Right container - Report card */
+.right-container {
+    flex: 1;
+    background-color: #f7fafc; /* off-white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+/* Report card styling */
+.report-card {
+    width: 95%;
+}
+
+/* Main table */
+.report-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+/* Table cells */
+.report-card th, .report-card td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #cbd5e0; /* subtle gray border */
+}
+
+/* Header row */
+.report-card th {
+    background-color: #4a5568; /* dark gray */
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Alternate row color */
+.report-card tr:nth-child(even) {
+    background-color: #f1f5f9; /* light gray */
+}
+
+/* Hover effect for rows */
+.report-card tr:hover {
+    background-color: #e2e8f0;
+}
+
+/* Last table (totals) styling */
+.report-card table:last-child th {
+    background-color: #2b6cb0; /* nice blue */
+    color: #ffffff;
+}
+
+.report-card table:last-child td {
+    font-weight: bold;
+}
+
+/* Scrollbar styling for student list */
+.std-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.std-list::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+.std-list::-webkit-scrollbar-thumb {
+    background: #a0aec0;
+    border-radius: 10px;
+}
