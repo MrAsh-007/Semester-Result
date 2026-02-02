@@ -2,85 +2,176 @@
 
 
 
-// let studentsCalculated = [
-//     {
-//         name: "Ali",
-//         id: "SE-101",
-//         semesters: {
-//             semester1: {
-//                 programmingFundamentals: 78,
-//                 ict: 72,
-//                 calculus: 70,
-//                 discreteMath: 75,
-//                 computerBasics: 80,
-//             },
-//             semester2: {
-//                 oop: 82,
-//                 dataStructures: 76,
-//                 linearAlgebra: 68,
-//                 digitalLogicDesign: 74,
-//                 softwareEngineeringIntro: 79,
-//             },
-//             semester3: {
-//                 databaseSystems: 85,
-//                 operatingSystems: 77,
-//                 algorithms: 73,
-//                 webEngineering: 81,
-//                 probabilityStats: 70,
-//             },
-//             semester4: {
-//                 softwareArchitecture: 80,
-//                 computerNetworks: 75,
-//                 artificialIntelligence: 72,
-//                 hci: 78,
-//                 informationSecurity: 74,
-//             },
-//             semester5: {
-//                 softwareProjectManagement: 83,
-//                 sqa: 79,
-//                 mobileAppDevelopment: 86,
-//                 cloudComputing: 81,
-//                 finalYearProject: 90,
-//             },
-//         },
-
-//     },
-// ];
-
-
-
-
-
-
-
-
-let studentsCalculated = [
+let studentsData = [
     {
         name: "Ali",
         id: "SE-101",
         semesters: {
-            semester1: {
+            semester1ObtainedMarks: {
                 programmingFundamentals: 78,
                 ict: 72,
                 calculus: 70,
                 discreteMath: 75,
                 computerBasics: 80,
             },
+            semester2ObtainedMarks: {
+                oop: 82,
+                dataStructures: 76,
+                linearAlgebra: 68,
+                digitalLogicDesign: 74,
+                softwareEngineeringIntro: 79,
+            },
+            semester3ObtainedMarks: {
+                databaseSystems: 85,
+                operatingSystems: 77,
+                algorithms: 73,
+                webEngineering: 81,
+                probabilityStats: 70,
+            },
+            semester4ObtainedMarks: {
+                softwareArchitecture: 80,
+                computerNetworks: 75,
+                artificialIntelligence: 72,
+                hci: 78,
+                informationSecurity: 74,
+            },
+            semester5ObtainedMarks: {
+                softwareProjectManagement: 83,
+                sqa: 79,
+                mobileAppDevelopment: 86,
+                cloudComputing: 81,
+                finalYearProject: 90,
+            },
         },
-        semester1TotalMarks : 0,
+        semester1result: {
+            semester1TotalMarks : 0,
+            semester1Percentage : 0
+        },
+        semester2result: {
+            semester2TotalMarks : 0,
+            semester2Percentage : 0
+        },
+        semester3result: {
+            semester3TotalMarks : 0,
+            semester3Percentage : 0
+        },
+        semester4result: {
+            semester4TotalMarks : 0,
+            semester4Percentage : 0
+        },
+        semester5result: {
+            semester5TotalMarks : 0,
+            semester5Percentage : 0
+        },
     },
 ];
 
-for(let i = 0; i < studentsCalculated.length ; i++){
-    console.log(studentsCalculated[i].semesters.semester1)
+
+
+
+let semestersDefaultData = {
+    semester1 : {},
+//     semester2 : {},
+//     semester3 : {},
+//     semester4 : {},
+//     semester5 : {},
 }
 
+let defaultvar1 = studentsData[0].semesters.semester1ObtainedMarks;
+semestersDefaultData.semester1 = defaultvar1
+// semestersDefaultData.semester1 = studentsData[0].semesters.semester1ObtainedMarks;
+// semestersDefaultData.semester2 = studentsData[0].semesters.semester2ObtainedMarks;
+// semestersDefaultData.semester3 = studentsData[0].semesters.semester3ObtainedMarks;
+// semestersDefaultData.semester4 = studentsData[0].semesters.semester4ObtainedMarks;
+// semestersDefaultData.semester5 = studentsData[0].semesters.semester5ObtainedMarks;
+
+
+for(let key in semestersDefaultData.semester1){
+    semestersDefaultData.semester1[key] = 100
+}
+
+// for(let key in semestersDefaultData.semester2){
+//     semestersDefaultData.semester2[key] = 100
+// }
+
+// for(let key in semestersDefaultData.semester3){
+//     semestersDefaultData.semester3[key] = 100
+// }
+
+// for(let key in semestersDefaultData.semester4){
+//     semestersDefaultData.semester4[key] = 100
+// }
+
+// for(let key in semestersDefaultData.semester5){
+//     semestersDefaultData.semester5[key] = 100
+// }
+
+
+
+// let semester1var = studentsData[0].semesters.semester1ObtainedMarks;
+// let semester1TotalMarks = studentsData[0].semester1TotalMarks;
+// let total1 = 0;
+
+// for(let key in semester1var){
+//     total1 += semester1var[key];
+//     semester1TotalMarks = total1;
+// }
 
 
 
 
 
+// let semester2var = studentsData[0].semesters.semester2ObtainedMarks;
+// let semester2TotalMarks = studentsData[0].semester2TotalMarks;
+// let total2 = 0;
 
+// for(let key in semester2var){
+//     total2 += semester2var[key];
+//     semester2TotalMarks = total2;
+// }
+
+
+
+
+// let semester3var = studentsData[0].semesters.semester3ObtainedMarks;
+// let semester3TotalMarks = studentsData[0].semester3TotalMarks;
+// let total3 = 0;
+
+// for(let key in semester3var){
+//     total3 += semester3var[key];
+//     semester3TotalMarks = total3;
+// }
+
+
+
+
+
+// let semester4var = studentsData[0].semesters.semester4ObtainedMarks;
+// let semester4TotalMarks = studentsData[0].semester4TotalMarks;
+// let total4 = 0;
+
+// for(let key in semester4var){
+//     total4 += semester4var[key];
+//     semester4TotalMarks = total4;
+// }
+
+
+
+// let semester5var = studentsData[0].semesters.semester5ObtainedMarks;
+// let semester5TotalMarks = studentsData[0].semester5TotalMarks;
+// let total5 = 0;
+
+// for(let key in semester5var){
+//     total5 += semester5var[key];
+//     semester5TotalMarks = total5;
+// }
+
+
+
+
+
+console.log(studentsData)
+// console.log(semestersDefaultData)
 
 //   {
 //     name: "Ahmed",

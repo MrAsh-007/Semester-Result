@@ -122,6 +122,7 @@
 .report-card table:last-child th {
     background-color: #2b6cb0; /* nice blue */
     color: #ffffff;
+    width: 50%;
 }
 
 .report-card table:last-child td {
