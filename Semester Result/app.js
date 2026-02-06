@@ -71,54 +71,56 @@ let studentsData = [
 
 let semestersDefaultData = {
     semester1 : {},
-//     semester2 : {},
-//     semester3 : {},
-//     semester4 : {},
-//     semester5 : {},
+    semester2 : {},
+    semester3 : {},
+    semester4 : {},
+    semester5 : {},
 }
 
-let defaultvar1 = studentsData[0].semesters.semester1ObtainedMarks;
-semestersDefaultData.semester1 = defaultvar1
-// semestersDefaultData.semester1 = studentsData[0].semesters.semester1ObtainedMarks;
-// semestersDefaultData.semester2 = studentsData[0].semesters.semester2ObtainedMarks;
-// semestersDefaultData.semester3 = studentsData[0].semesters.semester3ObtainedMarks;
-// semestersDefaultData.semester4 = studentsData[0].semesters.semester4ObtainedMarks;
-// semestersDefaultData.semester5 = studentsData[0].semesters.semester5ObtainedMarks;
+let defaultvar1 = JSON.parse(JSON.stringify(studentsData[0].semesters.semester1ObtainedMarks));
+semestersDefaultData.semester1 = defaultvar1;
+let defaultvar2 = JSON.parse(JSON.stringify(studentsData[0].semesters.semester2ObtainedMarks));
+semestersDefaultData.semester2 = defaultvar2;
+let defaultvar3 = JSON.parse(JSON.stringify(studentsData[0].semesters.semester3ObtainedMarks));
+semestersDefaultData.semester3 = defaultvar3;
+let defaultvar4 = JSON.parse(JSON.stringify(studentsData[0].semesters.semester4ObtainedMarks));
+semestersDefaultData.semester4 = defaultvar4;
+let defaultvar5 = JSON.parse(JSON.stringify(studentsData[0].semesters.semester5ObtainedMarks));
+semestersDefaultData.semester5 = defaultvar5;
 
 
-for(let key in semestersDefaultData.semester1){
-    semestersDefaultData.semester1[key] = 100
+for(let key in defaultvar1){
+    defaultvar1[key] = 100
+}
+for(let key in defaultvar2){
+    defaultvar2[key] = 100
+}
+for(let key in defaultvar3){
+    defaultvar3[key] = 100
+}
+for(let key in defaultvar4){
+    defaultvar4[key] = 100
+}
+for(let key in defaultvar5){
+    defaultvar5[key] = 100
 }
 
-// for(let key in semestersDefaultData.semester2){
-//     semestersDefaultData.semester2[key] = 100
-// }
 
-// for(let key in semestersDefaultData.semester3){
-//     semestersDefaultData.semester3[key] = 100
-// }
+let semester1var = studentsData[0].semesters.semester1ObtainedMarks;
+let semester1TotalMarks = studentsData[0].semester1TotalMarks;
+let total = 0;
 
-// for(let key in semestersDefaultData.semester4){
-//     semestersDefaultData.semester4[key] = 100
-// }
-
-// for(let key in semestersDefaultData.semester5){
-//     semestersDefaultData.semester5[key] = 100
-// }
+for(let key in semester1var){
+    total += semester1var[key];
+    semester1TotalMarks = total;
+}
+total = 0;
 
 
-
-// let semester1var = studentsData[0].semesters.semester1ObtainedMarks;
-// let semester1TotalMarks = studentsData[0].semester1TotalMarks;
-// let total1 = 0;
-
-// for(let key in semester1var){
-//     total1 += semester1var[key];
-//     semester1TotalMarks = total1;
-// }
-
-
-
+console.log(studentsData);
+console.log(semestersDefaultData);
+console.log(semester1TotalMarks);
+console.log(total)
 
 
 // let semester2var = studentsData[0].semesters.semester2ObtainedMarks;
@@ -170,7 +172,7 @@ for(let key in semestersDefaultData.semester1){
 
 
 
-console.log(studentsData)
+// console.log(studentsData)
 // console.log(semestersDefaultData)
 
 //   {
