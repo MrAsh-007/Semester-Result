@@ -82,6 +82,338 @@ let studentsData = [
             },
         ]
     },
+    // {
+    //     name: "Ali",
+    //     id: "SE-101",
+    //     semesters: [
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { programmingFundamentals: 78 },
+    //                 { ict: 72 },
+    //                 { calculus: 70 },
+    //                 { discreteMath: 75 },
+    //                 { computerBasics: 80 },
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { oop: 82 },
+    //                 { dataStructures: 76 },
+    //                 { linearAlgebra: 68 },
+    //                 { digitalLogicDesign: 74 },
+    //                 { softwareEngineeringIntro: 79 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { databaseSystems: 85 },
+    //                 { operatingSystems: 77 },
+    //                 { algorithms: 73 },
+    //                 { webEngineering: 81 },
+    //                 { probabilityStats: 70 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareArchitecture: 80 },
+    //                 { computerNetworks: 75 },
+    //                 { artificialIntelligence: 72 },
+    //                 { hci: 78 },
+    //                 { informationSecurity: 74 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareProjectManagement: 83 },
+    //                 { sqa: 79 },
+    //                 { mobileAppDevelopment: 86 },
+    //                 { cloudComputing: 81 },
+    //                 { finalYearProject: 90 }
+    //             ]
+    //         }
+    //     ],
+    //     semesterResult: [
+    //         {
+    //             semesterName: "Semester 1",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 2",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 3",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 4",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 5",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //     ]
+    // },
+    // {
+    //     name: "Ali",
+    //     id: "SE-101",
+    //     semesters: [
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { programmingFundamentals: 78 },
+    //                 { ict: 72 },
+    //                 { calculus: 70 },
+    //                 { discreteMath: 75 },
+    //                 { computerBasics: 80 },
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { oop: 82 },
+    //                 { dataStructures: 76 },
+    //                 { linearAlgebra: 68 },
+    //                 { digitalLogicDesign: 74 },
+    //                 { softwareEngineeringIntro: 79 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { databaseSystems: 85 },
+    //                 { operatingSystems: 77 },
+    //                 { algorithms: 73 },
+    //                 { webEngineering: 81 },
+    //                 { probabilityStats: 70 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareArchitecture: 80 },
+    //                 { computerNetworks: 75 },
+    //                 { artificialIntelligence: 72 },
+    //                 { hci: 78 },
+    //                 { informationSecurity: 74 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareProjectManagement: 83 },
+    //                 { sqa: 79 },
+    //                 { mobileAppDevelopment: 86 },
+    //                 { cloudComputing: 81 },
+    //                 { finalYearProject: 90 }
+    //             ]
+    //         }
+    //     ],
+    //     semesterResult: [
+    //         {
+    //             semesterName: "Semester 1",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 2",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 3",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 4",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 5",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //     ]
+    // },
+    // {
+    //     name: "Ali",
+    //     id: "SE-101",
+    //     semesters: [
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { programmingFundamentals: 78 },
+    //                 { ict: 72 },
+    //                 { calculus: 70 },
+    //                 { discreteMath: 75 },
+    //                 { computerBasics: 80 },
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { oop: 82 },
+    //                 { dataStructures: 76 },
+    //                 { linearAlgebra: 68 },
+    //                 { digitalLogicDesign: 74 },
+    //                 { softwareEngineeringIntro: 79 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { databaseSystems: 85 },
+    //                 { operatingSystems: 77 },
+    //                 { algorithms: 73 },
+    //                 { webEngineering: 81 },
+    //                 { probabilityStats: 70 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareArchitecture: 80 },
+    //                 { computerNetworks: 75 },
+    //                 { artificialIntelligence: 72 },
+    //                 { hci: 78 },
+    //                 { informationSecurity: 74 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareProjectManagement: 83 },
+    //                 { sqa: 79 },
+    //                 { mobileAppDevelopment: 86 },
+    //                 { cloudComputing: 81 },
+    //                 { finalYearProject: 90 }
+    //             ]
+    //         }
+    //     ],
+    //     semesterResult: [
+    //         {
+    //             semesterName: "Semester 1",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 2",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 3",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 4",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 5",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //     ]
+    // },
+    // {
+    //     name: "Ali",
+    //     id: "SE-101",
+    //     semesters: [
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { programmingFundamentals: 78 },
+    //                 { ict: 72 },
+    //                 { calculus: 70 },
+    //                 { discreteMath: 75 },
+    //                 { computerBasics: 80 },
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { oop: 82 },
+    //                 { dataStructures: 76 },
+    //                 { linearAlgebra: 68 },
+    //                 { digitalLogicDesign: 74 },
+    //                 { softwareEngineeringIntro: 79 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { databaseSystems: 85 },
+    //                 { operatingSystems: 77 },
+    //                 { algorithms: 73 },
+    //                 { webEngineering: 81 },
+    //                 { probabilityStats: 70 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareArchitecture: 80 },
+    //                 { computerNetworks: 75 },
+    //                 { artificialIntelligence: 72 },
+    //                 { hci: 78 },
+    //                 { informationSecurity: 74 }
+    //             ]
+    //         },
+    //         {
+    //             semesterObtainedMarks: [
+    //                 { softwareProjectManagement: 83 },
+    //                 { sqa: 79 },
+    //                 { mobileAppDevelopment: 86 },
+    //                 { cloudComputing: 81 },
+    //                 { finalYearProject: 90 }
+    //             ]
+    //         }
+    //     ],
+    //     semesterResult: [
+    //         {
+    //             semesterName: "Semester 1",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 2",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 3",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 4",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //         {
+    //             semesterName: "Semester 5",
+    //             semesterTotalMarks: 0,
+    //             semesterPercentage: 0,
+    //             grade: ""
+    //         },
+    //     ]
+    // },
 ];
 
 
@@ -108,49 +440,104 @@ for (let key in defaultvar1) {
 
 
 
-let semesterVar = 0;
-
-function getSubjectsMark2 () {
-    for(let j = 0; j < semesterVar.length; j++){
-    console.log(semesterVar[j])
-    }
-}
 
 
 
-function getSubjectsMark1() {
+// function getSubjectsMark1() {
+//     for (let i = 0; i < studentsData[0].semesters.length; i++) {
+
+//         semesterVar = studentsData[0].semesters[i].semesterObtainedMarks;
+
+//         studentsData[0].semesterResult[i].semesterTotalMarks = 0;
+
+
+//         if (semesterVar == studentsData[0].semesters[0].semesterObtainedMarks) {
+//             for (let key1 in semesterVar) {
+//                 for (let key2 in semesterVar[key1]) {
+//                     studentsData[0].semesterResult[0].semesterTotalMarks += semesterVar[key1][key2];
+//                 }
+//             }
+//         }
+
+//         if (semesterVar == studentsData[0].semesters[1].semesterObtainedMarks) {
+//             for (let key1 in semesterVar) {
+//                 for (let key2 in semesterVar[key1]) {
+//                     studentsData[0].semesterResult[1].semesterTotalMarks += semesterVar[key1][key2];
+//                 }
+//             }
+//         }
+
+//         if (semesterVar == studentsData[0].semesters[2].semesterObtainedMarks) {
+//             for (let key1 in semesterVar) {
+//                 for (let key2 in semesterVar[key1]) {
+//                     studentsData[0].semesterResult[2].semesterTotalMarks += semesterVar[key1][key2];
+//                 }
+//             }
+//         }
+
+//         if (semesterVar == studentsData[0].semesters[3].semesterObtainedMarks) {
+//             for (let key1 in semesterVar) {
+//                 for (let key2 in semesterVar[key1]) {
+//                     studentsData[0].semesterResult[3].semesterTotalMarks += semesterVar[key1][key2];
+//                 }
+//             }
+//         }
+
+//         if (semesterVar == studentsData[0].semesters[4].semesterObtainedMarks) {
+//             for (let key1 in semesterVar) {
+//                 for (let key2 in semesterVar[key1]) {
+//                     studentsData[0].semesterResult[4].semesterTotalMarks += semesterVar[key1][key2];
+//                 }
+//             }
+//         }
+//     }
+// }
+// getSubjectsMark1()
+
+
+let semesterVar;
+
+let semArr;
+
+
+
+
+
+function getSubjectsTotalMarks(index, semester) {
     for (let i = 0; i < studentsData[0].semesters.length; i++) {
 
+        studentsData[0].semesterResult[i].semesterTotalMarks = 0;
+
         semesterVar = studentsData[0].semesters[i].semesterObtainedMarks;
+
         if (semesterVar == studentsData[0].semesters[i].semesterObtainedMarks) {
-            getSubjectsMark2()
-            // for (let key in semesterVar) {
-            //     studentsData[0].semesterResult[0].semesterTotalMarks += semesterVar[key];
-            // }
+            for (let key1 in semesterVar) {
+                for (let key2 in semesterVar[key1]) {
+                    studentsData[0].semesterResult[i].semesterTotalMarks += semesterVar[key1][key2];
+                }
+            }
         }
-        // if (semesterVar == studentsData[0].semesters[1].semesterObtainedMarks) {
-        //     for (let key in semesterVar) {
-        //         studentsData[0].semesterResult[1].semesterTotalMarks += semesterVar[key];
-        //     }
-        // }
-        // if (semesterVar == studentsData[0].semesters[2].semesterObtainedMarks) {
-        //     for (let key in semesterVar) {
-        //         studentsData[0].semesterResult[2].semesterTotalMarks += semesterVar[key];
-        //     }
-        // }
-        // if (semesterVar == studentsData[0].semesters[3].semesterObtainedMarks) {
-        //     for (let key in semesterVar) {
-        //         studentsData[0].semesterResult[3].semesterTotalMarks += semesterVar[key];
-        //     }
-        // }
-        // if (semesterVar == studentsData[0].semesters[4].semesterObtainedMarks) {
-        //     for (let key in semesterVar) {
-        //         studentsData[0].semesterResult[4].semesterTotalMarks += semesterVar[key];
-        //     }
-        // }
+
+
+
+
+
+        semArr = studentsData[0].semesters[i];
+
+        if(semArr == studentsData[0].semesters[0]){
+            for (let key1 in semArr.semesterObtainedMarks[index]) {
+                return semArr.semesterObtainedMarks[index][key1]
+            }
+        }
+
+
     }
 }
-getSubjectsMark1()
+getSubjectsTotalMarks()
+
+
+
+
 
 let totalMarks = 100;
 
@@ -215,12 +602,12 @@ for (let i = 0; i < studentsData[0].semesterResult.length; i++) {
 }
 
 
-let rightContainer = document.getElementById("rightContainer");
+let reportCard = document.getElementById("reportCard");
 
 const createSemesterReportCardHTMLThroughMap = () => {
-    let studentsDataMapReturn = studentsData.map((data) => {
-        return `<h3 class="semester-heading">${data.semesterResult.semesterName}</h3>
-                <div class="report-card">
+    let studentsDataMapReturn = studentsData.map((data, index) => {
+        return `
+                <h3 class="semester-heading">${data.semesterResult[index].semesterName}</h3>
                     <table>
                         <tr>
                             <th>Subjects</th>
@@ -229,47 +616,47 @@ const createSemesterReportCardHTMLThroughMap = () => {
                         </tr>
                         <tr>
                             <th>English</th>
-                            <td>${data.semesters[0].semesterObtainedMarks.calculus}</td>
+                            <td>${getSubjectsTotalMarks(0, data.semesterResult[index].semesterName)}</td>
                             <td>${totalMarks}</td>
                         </tr>
                         <tr>
                             <th>Urdu</th>
-                            <td>${data.semesters[0].semesterObtainedMarks.computerBasics}</td>
+                            <td>${getSubjectsTotalMarks(1, data.semesterResult[index].semesterName)}</td>
                             <td>${totalMarks}</td>
                         </tr>
                         <tr>
                             <th>Math</th>
-                            <td>${data.semesters[0].semesterObtainedMarks.discreteMath}</td>
+                            <td>${getSubjectsTotalMarks(2, data.semesterResult[index].semesterName)}</td>
                             <td>${totalMarks}</td>
                         </tr>
                         <tr>
                             <th>Islamiat</th>
-                            <td>${data.semesters[0].semesterObtainedMarks.ict}</td>
+                            <td>${getSubjectsTotalMarks(3, data.semesterResult[index].semesterName)}</td>
                             <td>${totalMarks}</td>
                         </tr>
                             <th>Computer</th>
-                            <td>${data.semesters[0].semesterObtainedMarks.programmingFundamentals}</td>
+                            <td>${getSubjectsTotalMarks(4, data.semesterResult[index].semesterName)}</td>
                             <td>${totalMarks}</td>
                         </tr>
                     </table>
                     <table>
-                        <tr>
+                        <tr class="last-table">
                             <th>Total Obtained Marks</th>
-                            <td>${data.semesterResult[0].semesterTotalMarks} / ${sumOfTotalMarks}</td>
+                            <td>${data.semesterResult[index].semesterTotalMarks} / ${sumOfTotalMarks}</td>
                         </tr>
-                        <tr>
+                        <tr class="last-table">
                             <th>Percentage</th>
-                            <td>${data.semesterResult[0].semesterPercentage}%</td>
+                            <td>${data.semesterResult[index].semesterPercentage}%</td>
                         </tr>
-                        <tr>
+                        <tr class="last-table">
                             <th>Grade</th>
-                            <td>${data.semesterResult[0].grade}</td>
+                            <td>${data.semesterResult[index].grade}</td>
                         </tr>
-                    </table>
-                </div>`
+                    </table>`
     });
 
-    rightContainer.innerHTML = studentsDataMapReturn;
+
+    reportCard.innerHTML = studentsDataMapReturn.join("");
 }
 
 createSemesterReportCardHTMLThroughMap();
