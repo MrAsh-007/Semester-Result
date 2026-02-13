@@ -300,6 +300,8 @@ let studentsData = [
 
 
 
+let indexReturn = 0;
+
 
 
 
@@ -307,7 +309,7 @@ let studentsData = [
 //     semester1 : {},
 // }
 
-let defaultvar1 = JSON.parse(JSON.stringify(studentsData[0][0].semesters[0].semesterObtainedMarks));
+let defaultvar1 = JSON.parse(JSON.stringify(studentsData[indexReturn][0].semesters[0].semesterObtainedMarks));
 // semestersDefaultData.semester1 = defaultvar1;
 
 let sumOfTotalMarks = 0;
@@ -316,9 +318,6 @@ for (let key in defaultvar1) {
     defaultvar1[key] = 100;
     sumOfTotalMarks += defaultvar1[key];
 }
-
-
-
 
 
 
@@ -383,21 +382,21 @@ let semArr;
 function getSubjectsTotalMarks() {
 
 
-    for (let i = 0; i < studentsData[0][0].semesters.length; i++) {
+    for (let i = 0; i < studentsData[indexReturn][0].semesters.length; i++) {
 
-        studentsData[0][0].semesterResult[i].semesterTotalMarks = 0;
+        studentsData[indexReturn][0].semesterResult[i].semesterTotalMarks = 0;
 
-        semesterVar = studentsData[0][0].semesters[i].semesterObtainedMarks;
-        if (semesterVar == studentsData[0][0].semesters[i].semesterObtainedMarks) {
+        semesterVar = studentsData[indexReturn][0].semesters[i].semesterObtainedMarks;
+        if (semesterVar == studentsData[indexReturn][0].semesters[i].semesterObtainedMarks) {
             for (let key1 in semesterVar) {
                 for (let key2 in semesterVar[key1]) {
-                    studentsData[0][0].semesterResult[i].semesterTotalMarks += semesterVar[key1][key2];
+                    studentsData[indexReturn][0].semesterResult[i].semesterTotalMarks += semesterVar[key1][key2];
                 }
             }
         }
     }
 }
-getSubjectsTotalMarks()
+
 
 
 
@@ -405,30 +404,38 @@ getSubjectsTotalMarks()
 
 let totalMarks = 100;
 
+let semesterTotalMarksVar = [];
 
+let semesterTotalMarksVarFn = () => {
+    semesterTotalMarksVar = [
+        studentsData[indexReturn][0].semesterResult[0].semesterTotalMarks,
+        studentsData[indexReturn][0].semesterResult[1].semesterTotalMarks,
+        studentsData[indexReturn][0].semesterResult[2].semesterTotalMarks,
+        studentsData[indexReturn][0].semesterResult[3].semesterTotalMarks,
+        studentsData[indexReturn][0].semesterResult[4].semesterTotalMarks,
+    ]
+}
 
+let semesterPercentageVar = [];
 
+let semesterPercentageVarFn = () => {
+    for (let i = 0; i < studentsData[indexReturn][0].semesterResult.length; i++) {
+        studentsData[indexReturn][0].semesterResult[i].semesterPercentage =  (semesterTotalMarksVar[i] / sumOfTotalMarks * 100).toFixed();
+    }
 
-let semesterTotalMarksVar = [
-    studentsData[0][0].semesterResult[0].semesterTotalMarks,
-    studentsData[0][0].semesterResult[1].semesterTotalMarks,
-    studentsData[0][0].semesterResult[2].semesterTotalMarks,
-    studentsData[0][0].semesterResult[3].semesterTotalMarks,
-    studentsData[0][0].semesterResult[4].semesterTotalMarks,
-]
-
-for (let i = 0; i < studentsData[0][0].semesterResult.length; i++) {
-    studentsData[0][0].semesterResult[i].semesterPercentage = semesterTotalMarksVar[i] / sumOfTotalMarks * 100;
+    semesterPercentageVar = [
+        studentsData[indexReturn][0].semesterResult[0].semesterPercentage,
+        studentsData[indexReturn][0].semesterResult[1].semesterPercentage,
+        studentsData[indexReturn][0].semesterResult[2].semesterPercentage,
+        studentsData[indexReturn][0].semesterResult[3].semesterPercentage,
+        studentsData[indexReturn][0].semesterResult[4].semesterPercentage,
+    ]
 }
 
 
-let semesterPercentageVar = [
-    studentsData[0][0].semesterResult[0].semesterPercentage,
-    studentsData[0][0].semesterResult[1].semesterPercentage,
-    studentsData[0][0].semesterResult[2].semesterPercentage,
-    studentsData[0][0].semesterResult[3].semesterPercentage,
-    studentsData[0][0].semesterResult[4].semesterPercentage,
-]
+
+
+
 
 console.log(studentsData);
 console.log(semesterTotalMarksVar);
@@ -439,29 +446,29 @@ function gradeMarker() {
     for (let i = 0; i < semesterPercentageVar.length; i++) {
 
         if (semesterPercentageVar[i] >= 90) {
-            studentsData[0][0].semesterResult[i].grade = "A+";
+            studentsData[indexReturn][0].semesterResult[i].grade = "A+";
         }
         else if (semesterPercentageVar[i] >= 80) {
-            studentsData[0][0].semesterResult[i].grade = "A";
+            studentsData[indexReturn][0].semesterResult[i].grade = "A";
         }
         else if (semesterPercentageVar[i] >= 70) {
-            studentsData[0][0].semesterResult[i].grade = "B";
+            studentsData[indexReturn][0].semesterResult[i].grade = "B";
         }
         else if (semesterPercentageVar[i] >= 60) {
-            studentsData[0][0].semesterResult[i].grade = "C";
+            studentsData[indexReturn][0].semesterResult[i].grade = "C";
         }
         else if (semesterPercentageVar[i] >= 50) {
-            studentsData[0][0].semesterResult[i].grade = "D";
+            studentsData[indexReturn][0].semesterResult[i].grade = "D";
         }
         else {
-            studentsData[0][0].semesterResult[i].grade = "Fail";
+            studentsData[indexReturn][0].semesterResult[i].grade = "Fail";
         }
     }
 }
-gradeMarker()
 
-for (let i = 0; i < studentsData[0][0].semesterResult.length; i++) {
-    console.log(studentsData[0][0].semesterResult[i].grade)
+
+for (let i = 0; i < studentsData[indexReturn][0].semesterResult.length; i++) {
+    console.log(studentsData[indexReturn][0].semesterResult[i].grade)
 }
 
 
@@ -478,7 +485,7 @@ for (let i = 0; i < studentsData[0][0].semesterResult.length; i++) {
 // const getEachSubjectsNumbersHTML = () => {
 //     let subjectsHTML = "";
 //         let subjectNumberArr = studentsData[0][0].semesters[0].semesterObtainedMarks;
-        
+
 //         for(let i = 0; i < subjectNumberArr.length; i++){
 //             for(let subject in subjectNumberArr[i]){
 //                 subjectsHTML += `<tr>
@@ -494,24 +501,33 @@ for (let i = 0; i < studentsData[0][0].semesterResult.length; i++) {
 
 let reportCard = document.getElementById("reportCard");
 
-const createSemesterReportCardHTMLThroughMap = () => {
-    let studentsDataMapReturn = studentsData[0][0].semesterResult.map((data, index) => {
 
 
-        let subjectsHTML = "";
-        let subjectNumberArr = studentsData[0][0].semesters[index].semesterObtainedMarks;
-        
-        for(let i = 0; i < subjectNumberArr.length; i++){
-            for(let subject in subjectNumberArr[i]){
-                subjectsHTML += `<tr>
+function getStdsIndex() {
+    indexReturn = parseInt(this.id);
+    getSubjectsTotalMarks();
+    semesterTotalMarksVarFn();
+    semesterPercentageVarFn();
+    gradeMarker();
+
+    const createSemesterReportCardHTMLThroughMap = () => {
+        let studentsDataMapReturn = studentsData[indexReturn][0].semesterResult.map((data, index) => {
+
+
+            let subjectsHTML = "";
+            let subjectNumberArr = studentsData[indexReturn][0].semesters[index].semesterObtainedMarks;
+
+            for (let i = 0; i < subjectNumberArr.length; i++) {
+                for (let subject in subjectNumberArr[i]) {
+                    subjectsHTML += `<tr>
                             <th>Subject Name</th>
                             <td>${subjectNumberArr[i][subject]}</td>
                             <td>${totalMarks}</td>
                         </tr>`
+                }
             }
-        }
 
-        return `
+            return `
                 <h3 class="semester-heading">${data.semesterName}</h3>
                     <table>
                         <tr>
@@ -535,10 +551,36 @@ const createSemesterReportCardHTMLThroughMap = () => {
                             <td>${data.grade}</td>
                         </tr>
                     </table>`
-    });
+        });
 
 
-    reportCard.innerHTML = studentsDataMapReturn.join("");
+        reportCard.innerHTML = studentsDataMapReturn.join("");
+    }
+
+    createSemesterReportCardHTMLThroughMap();
+
 }
 
-createSemesterReportCardHTMLThroughMap();
+let stds = document.getElementsByClassName("stds");
+
+let stdsArr = [];
+
+for (let i = 0; i < stds.length; i++) {
+    stds[i].addEventListener("click", getStdsIndex);
+    stds[i].addEventListener("click", stdsActiveAdd);
+}
+
+function stdsActiveAdd () {
+    this.classList.add("active");
+    stdsActiveRemove()
+    stdsArr.push(this);
+}
+function stdsActiveRemove () {
+    if(stdsArr == false);
+
+    else{
+    stdsArr[0].classList.remove("active");
+    stdsArr.shift();
+    }
+
+}
