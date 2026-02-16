@@ -420,7 +420,7 @@ let semesterPercentageVar = [];
 
 let semesterPercentageVarFn = () => {
     for (let i = 0; i < studentsData[indexReturn][0].semesterResult.length; i++) {
-        studentsData[indexReturn][0].semesterResult[i].semesterPercentage =  (semesterTotalMarksVar[i] / sumOfTotalMarks * 100).toFixed();
+        studentsData[indexReturn][0].semesterResult[i].semesterPercentage = (semesterTotalMarksVar[i] / sumOfTotalMarks * 100).toFixed();
     }
 
     semesterPercentageVar = [
@@ -519,8 +519,16 @@ function getStdsIndex() {
 
             for (let i = 0; i < subjectNumberArr.length; i++) {
                 for (let subject in subjectNumberArr[i]) {
+                    let subjectArr = subject.split("");
+                    for (let j = 0; j < subjectArr.length; j++) {
+                        subjectArr[0] = subjectArr[0].toUpperCase();
+                        if (subjectArr[j] == subjectArr[j].toUpperCase() && subjectArr[j - 1] != " ") {
+                            subjectArr.splice(j, 0, " ");
+                        }
+                    }
+                    subjectArr = subjectArr.join("");
                     subjectsHTML += `<tr>
-                            <th>Subject Name</th>
+                            <th>${subjectArr}</th>
                             <td>${subjectNumberArr[i][subject]}</td>
                             <td>${totalMarks}</td>
                         </tr>`
@@ -570,17 +578,17 @@ for (let i = 0; i < stds.length; i++) {
     stds[i].addEventListener("click", stdsActiveAdd);
 }
 
-function stdsActiveAdd () {
+function stdsActiveAdd() {
     this.classList.add("active");
     stdsActiveRemove()
     stdsArr.push(this);
 }
-function stdsActiveRemove () {
-    if(stdsArr == false);
+function stdsActiveRemove() {
+    if (stdsArr == false);
 
-    else{
-    stdsArr[0].classList.remove("active");
-    stdsArr.shift();
+    else {
+        stdsArr[0].classList.remove("active");
+        stdsArr.shift();
     }
 
 }
